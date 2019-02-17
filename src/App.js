@@ -30,14 +30,6 @@ class FizzBuzzMessage extends React.Component {
   
   render() {
     const valueOut = this.props.valueOut
-
-    if (!valueOut) {
-      return (
-        <div className="fizzBuzzMessage"> 
-          <h2>Waiting for input...</h2>
-        </div>
-      );
-    }
     
     return (
       <div className="fizzBuzzMessage">
@@ -51,7 +43,7 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.handleFizzBuzzChange = this.handleFizzBuzzChange.bind(this);
-    this.state = {valueIn: 1};
+    this.state = {valueIn: ''};
   }
 
   handleFizzBuzzChange(value) {
