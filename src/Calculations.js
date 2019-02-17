@@ -22,6 +22,14 @@ class FizzBuzzCalculations {
   getValue(input) {
     const value = parseInt(input, 10);
     if (Number.isInteger(value) && this.isInRange(value)) { return this.getFizzBuzz(value) }
+    else if (!Number.isInteger(value)) {
+      console.log(value);
+      return "Error, not a number"
+    }
+    else if (!Number.isInRange(value)){
+      console.log(value)
+      return "Error, out of range"
+    }
     else { return "Error, invalid input" }
   }
 
