@@ -8,26 +8,19 @@ class FizzBuzzInput extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
-    this.handleClick = this.handleClick.bind(this);
-    this.state = { input: ''};
   }
 
   handleChange(e) {
-    this.setState({ input: e.target.value });
-  }
-
-  handleClick() {
-    
+    this.props.onValueChange(e.target.value);
   }
 
   render() {
-    let valueIn = this.props.value;
-    valueIn = this.state.input;
+    const valueIn = this.props.valueIn;
     return (
       <fieldset>
         <legend>Enter input value:</legend>
-        <input className="fizzbuzzinput" onChange={this.handleChange} value={valueIn}/>
-        <button className="submitBtn" onClick={this.handleClick}>Submit</button>
+        <input className="fizzbuzzinput" valueIn={valueIn}
+               onChange={this.handleChange} />
       </fieldset>
     );
   }
@@ -58,16 +51,11 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.handleFizzBuzzChange = this.handleFizzBuzzChange.bind(this);
-    this.handleFizzBuzzClick = this.handleFizzBuzzClick.bind(this);
     this.state = {valueIn: 1};
   }
 
   handleFizzBuzzChange(value) {
     this.setState({valueIn: value})
-  }
-
-  handleFizzBuzzClick(){
-    console.log(this.valueIn);
   }
 
   render() {
@@ -78,8 +66,8 @@ class Calculator extends React.Component {
 
     return (
       <div>
-        <FizzBuzzInput value={input}
-          onClick={this.handleFizzBuzzChange} />
+        <FizzBuzzInput valueIn={input}
+          onValueChange={this.handleFizzBuzzChange} />
           <hr/>
         <FizzBuzzMessage valueOut={output}/>
       </div>
