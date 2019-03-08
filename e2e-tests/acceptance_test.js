@@ -2,11 +2,15 @@ const assert = require('assert');
 
 describe("Basic App Functionality", () => {
 
-    it('should have correct page title', () => {
+    it('should show the correct value for 15', () => {
         browser.url('/index.html');
 
-        title = browser.getTitle();
+        const input = browser.element('.fizzbuzzinput')
+        input.addValue('15')
 
-        assert.equal(title, "FizzBuzz Challenge");
+        const messageText = browser.element('.fizzBuzzMessage').getText();
+        const expectedText = "FizzBuzz"
+
+        assert.equal(messageText, expectedText);
     });
 });
