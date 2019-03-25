@@ -98,8 +98,8 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
-    user: process.env.SAUCE_USERNAME,
-    key: process.env.SAUCE_ACCESS_KEY,
+    user: process.env.TEST_USERNAME,
+    key: process.env.TEST_KEY,
 
     reporters: ['spec'],
 
