@@ -20,7 +20,6 @@ pipeline {
         stage('Run Functional Tests') {
             steps {
                   sh "npm run test-wdio"
-                }
             }
         }
     }
