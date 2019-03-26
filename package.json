@@ -11,7 +11,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom",
-    "test-wdio": "./node_modules/.bin/wdio wdio.conf.js",
+    "test-wdio": "wdio wdio.conf.js",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
