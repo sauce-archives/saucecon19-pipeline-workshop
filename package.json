@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "^2.0.3"
+    "react-scripts": "^2.0.3",
+    "webdriverio": "^5.7.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,5 +23,11 @@
     "@wdio/sauce-service": "^5.7.7",
     "@wdio/spec-reporter": "^5.7.2",
     "@wdio/sync": "^5.7.6"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
