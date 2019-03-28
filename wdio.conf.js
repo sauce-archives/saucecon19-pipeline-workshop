@@ -71,6 +71,11 @@ exports.config = {
       {browserName: 'firefox', platform: 'Windows 10', version: 'latest'},
       {browserName: 'chrome', platform: 'OS X 10.13', version: 'latest'},
     ],
+    
+    // use built-in Sauce Connect functionality included with wdio-sauce-service
+    sauceConnect: true,
+    region: 'us',
+
     //
     // ===================
     // Test Configurations
