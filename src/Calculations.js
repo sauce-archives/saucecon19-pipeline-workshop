@@ -1,6 +1,6 @@
 class FizzBuzzCalculations {
 
-  getFizzBuzz(int_value){
+  getValue(int_value){
       return "";
   }
 
