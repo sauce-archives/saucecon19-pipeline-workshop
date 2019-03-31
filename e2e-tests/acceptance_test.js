@@ -5,10 +5,10 @@ describe("Basic App Functionality", () => {
     it('should show the correct value for 15', () => {
         browser.url('/index.html');
 
-        const input = $('.fizzbuzzinput')
+        const input = browser.element('.fizzbuzzinput')
         input.addValue('15')
 
-        const messageText = $('.fizzBuzzMessage').getText();
+        const messageText = browser.element('.fizzBuzzMessage').getText();
         const expectedText = "FizzBuzz"
 
         assert.equal(messageText, expectedText);
