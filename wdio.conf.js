@@ -69,7 +69,7 @@ exports.config = {
         //maxInstances: 5,
         //
       {browserName: 'firefox', platform: 'Windows 10', version: 'latest'},
-      {browserName: 'chrome', platform: 'OS X 10.13', version: 'latest'},
+      {browserName: 'chrome', platform: 'OS X 10.13', version: 'latest', 'extendedDebugging': true},
     ],
     
     // use built-in Sauce Connect functionality included with wdio-sauce-service
