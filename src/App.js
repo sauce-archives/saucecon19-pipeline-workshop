@@ -15,7 +15,7 @@ class FizzBuzzInput extends React.Component {
   }
 
   newAlertMessage() {
-    this.toString("this is a new alert");
+    this.toString("this is a new alert 2");
   }
 
   render() {
