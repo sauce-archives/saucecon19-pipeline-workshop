@@ -14,6 +14,10 @@ class FizzBuzzInput extends React.Component {
     this.props.onValueChange(e.target.value);
   }
 
+  newAlertMessage() {
+    this.toString("this is a new alert");
+  }
+
   render() {
     const value = this.props.value;
     return (
