@@ -182,3 +182,21 @@ A Jenkins build server is provided during the workshop, if you wish to re-produc
 ### (Optional) Install and Configure Docker
 
 Additionally, if you wish to deploy and manage Jenkins via Docker containers, consult the instructions located in the [./jenkins-guides/](./jenkins-guide/JENKINS-SETUP.md#optional-deploy-jenkins-using-docker) directory.
+
+# Exercise Companion
+Fizz Buzz challenge: The goal of the workshop is to complete one or any of the following challenges.
+
+### Challenge 1
+Create function expressions for integers between 1-100.
+    * If divisible by 3, output "Fizz"
+    * If divisible by 5, output "Buzz"
+    * If divisible by 3 & 5, output "FizzBuzz"
+    * Else, print nothing or **null**
+    
+### Challenge 2 (Intermediate)
+Print **"out of range"** and/or **"not an integer"** error messages
+
+### Challenge 3 (Advanced)
+Allow for custom number ranges with outputs
+   
+   > Break into teams of three: One person is tester, one person is ops (manages Jenkins job execution), one person is developer. All individuals must stay in their own realm! The purpose is to simulate how one navigates a siloed work environment and bridge communication gagps
