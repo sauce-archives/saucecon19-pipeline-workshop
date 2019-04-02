@@ -6,10 +6,10 @@ describe("Basic App Functionality", () => {
         browser.url('/index.html');
 
         const input = browser.element('.fizzbuzzinput')
-        input.addValue('16')
+        input.addValue('15')
 
         const messageText = browser.element('.fizzBuzzMessage').getText();
-        const expectedText = "FizzBuzz"
+        const expectedText = "Fizz"
 
         assert.equal(messageText, expectedText);
     });
