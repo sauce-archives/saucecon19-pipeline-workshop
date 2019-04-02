@@ -85,4 +85,8 @@ class App extends Component {
   }
 }
 
+function test(){
+  console.log("test");
+}
+
 export default App;
