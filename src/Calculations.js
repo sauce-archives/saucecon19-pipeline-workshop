@@ -1,3 +1,5 @@
+// new idea
+
 class FizzBuzzCalculations {
 
   getValue(int_value){
