@@ -9,7 +9,7 @@ describe("Basic App Functionality", () => {
         input.addValue('15')
 
         const messageText = browser.element('.fizzBuzzMessage').getText();
-        const expectedText = "Fizz"
+        const expectedText = "FizzBuzz"
 
         assert.equal(messageText, expectedText);
     });
