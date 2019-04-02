@@ -1,7 +1,16 @@
 class FizzBuzzCalculations {
 
   getValue(int_value){
-      return "";
+      var retVal = "";
+
+      if (int_value % 3 === 0) {
+        retVal += "Fizz"
+      }
+
+      if (int_value % 5 === 0) {
+        retVal += "Buzz"
+      }
+      return retVal;
   }
 
 }
