@@ -2,9 +2,9 @@
 
 This directory contains example scripts and dependencies for the SauceCon workshop: [Creating a Continuous Delivery Pipeline with Automated Testing](https://saucecon.com/). Use these scripts to test your Sauce Labs authentication credentials, setup your automated testing environment, try out Sauce Labs features, and complete the in-class Selenium examples. Download the zip file or clone the entire directory to your local environment.
 
-#### For Demonstration Purposes Only
+ > #### Disclaimer: For Demonstration Purposes Only
 
-The code in these scripts is provided on an "AS-IS” basis without warranty of any kind, either express or implied, including without limitation any implied warranties of condition, uninterrupted use, merchantability, fitness for a particular purpose, or non-infringement. These scripts are provided for educational and demonstration purposes only, and should not be used in production. Issues regarding these scripts should be submitted through GitHub. These scripts are maintained by the Technical Services team at Sauce Labs.
+> The code in these scripts is provided on an "AS-IS” basis without warranty of any kind, either express or implied, including without limitation any implied warranties of condition, uninterrupted use, merchantability, fitness for a particular purpose, or non-infringement. These scripts are provided for educational and demonstration purposes only, and should not be used in production. Issues regarding these scripts should be submitted through GitHub. These scripts are maintained by the Technical Services team at Sauce Labs.
 
 <br />
 
@@ -12,12 +12,27 @@ The code in these scripts is provided on an "AS-IS” basis without warranty of 
 
 In order to complete these exercises you must complete the following prerequisite installation and configuration steps:
 
-* Install Git
-* Install Node and NPM
-* Install an IDE (IntelliJ, WebStorm, Atom etc.)
-* Install WebDriverIO
-* Setup Project
-* (Optional) Install and Configure Jenkins
+* [Install Git](#install-git)
+* [Install Node and NPM](#install-npm-and-nodejs)
+* [Install an IDE (IntelliJ, WebStorm, Atom etc.)](#install-an-ide)
+* [Install WebDriverIO](install-webdriverio)
+
+<br />
+
+## Setting Up the Project
+Refer to the [getting started guide](exercise-guides/getting-started.md#setup-the-project) for step-by-step instructions on how to setup the project and submit a pull request.
+
+<br />
+
+## Completing the Exercises
+Refer to the [getting started guide](exercise-guides/getting-started.md#exercise-list), for step by step instructions for each exercise challenge.
+
+<br />
+
+## Installation Guides
+Below are the step-by-step instructions for installing the [prerequisites](#prerequisites)
+
+<br />
 
 ### Install Git
 
@@ -44,6 +59,7 @@ integration/continuous development toolchain.
 2. Under **Downloads**, click on **Windows**.
 3. When the dialog opens asking if you want to allow the app to make changes to your device, click Yes.
 4. Follow the steps in the setup wizard to complete the installation. You should accept all the default settings.
+
 <br />
 
 ### Install NPM and NodeJS
@@ -72,6 +88,8 @@ integration/continuous development toolchain.
 2. Under **LTS**, click **Windows Installer**.
 3. When the download completes, double-click the `.msi` file to open the installer
 4. Follow the prompts to complete the installation.
+
+<br />
 
 ### Install an IDE
 
@@ -102,6 +120,7 @@ In our examples we use IntelliJ Community version. [IntelliJ](https://www.jetbra
 4. Under **Community**, click **Download**.
 5. When the download completes, double-click the `.exe` file to launch the installation wizard. 
 You should accept all the default settings.
+
 <br />
 
 ### Install NPM and NodeJS
@@ -130,11 +149,28 @@ You should accept all the default settings.
 2. Under **LTS**, click **Windows Installer**.
 3. When the download completes, double-click the `.msi` file to open the installer
 4. Follow the prompts to complete the installation.
+
 <br />
 
-### Install GeckoDriver
+### Install WebDriverIO
 
-The [GeckoDriver](https://github.com/mozilla/geckodriver/releases) is Mozilla's proxy for W3C WebDriver clients that interact with Gecko-based (firefox) browsers. We use GeckoDriver to ensure we've configured Node and WebdriverIO correctly.
+[WebDriverIO](https://webdriver.io/) is the next gen test framework for NodeJS that's an independent implementation of the JSON Wire Protocol that wraps lower level requests into a concise syntax.
+
+Currently NodeJS bindings are available so to install WebDriverIO you must have NPM and internet access:
+```aidl
+    $ npm install webdriverio
+```
+For more information, please refer to the [WebDriverIO GitHub Page](https://github.com/webdriverio/webdriverio) 
+
+<br />
+
+### (Optional) Install and Configure Jenkins Locally
+A Jenkins build server is provided during the workshop, if you wish to re-produce the setup on your local machine consult the instructions located in the [./jenkins-guides/](./jenkins-guide/JENKINS-SETUP.md#install-jenkins) directory. Additionally, if you wish to deploy and manage Jenkins via Docker containers, refer to the instructions located in the [./jenkins-guides/](./jenkins-guide/JENKINS-SETUP.md#optional-deploy-jenkins-using-docker) directory.
+
+<br />
+
+### (Optional) Install GeckoDriver
+This option is for if you wish to test locally. The [GeckoDriver](https://github.com/mozilla/geckodriver/releases) is Mozilla's proxy for W3C WebDriver clients that interact with Gecko-based (firefox) browsers. We use GeckoDriver to ensure we've configured Node and WebdriverIO correctly.
 
 #### MacOSX:
 1. Go to [https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases).
@@ -154,49 +190,5 @@ The [GeckoDriver](https://github.com/mozilla/geckodriver/releases) is Mozilla's 
     $ npm install geckodriver
     ```
 2. Then use the provided driver located in your `bin` directory.
+
 <br />
-
-### Install WebDriverIO
-
-[WebDriverIO](https://webdriver.io/) is the next gen test framework for NodeJS that's an independent implementation of the JSON Wire Protocol that wraps lower level requests into a concise syntax.
-
-Currently NodeJS bindings are available so to install WebDriverIO you must have NPM and internet access:
-```aidl
-    $ npm install webdriverio
-```
-For more information, please refer to the [WebDriverIO GitHub Page](https://github.com/webdriverio/webdriverio) 
-<br />
-
-### Setup the Project
-
-
-1. **Create a Project Directory**:
-    * Create a directory on your filesystem to store the project files. You can create the directory using the IDE toolbar or the command line. Below is an example of using the command line to create your project directory:
-
-    
-        
-### (Optional) Install and Configure Jenkins
-
-A Jenkins build server is provided during the workshop, if you wish to re-produce the setup on your local machine consult the instructions located in the [./jenkins-guides/](./jenkins-guide/JENKINS-SETUP.md#install-jenkins) directory.
-
-### (Optional) Install and Configure Docker
-
-Additionally, if you wish to deploy and manage Jenkins via Docker containers, consult the instructions located in the [./jenkins-guides/](./jenkins-guide/JENKINS-SETUP.md#optional-deploy-jenkins-using-docker) directory.
-
-# Exercise Companion
-Fizz Buzz challenge: The goal of the workshop is to complete one or any of the following challenges.
-
-### Challenge 1
-Create function expressions for integers between 1-100.
-    * If divisible by 3, output "Fizz"
-    * If divisible by 5, output "Buzz"
-    * If divisible by 3 & 5, output "FizzBuzz"
-    * Else, print nothing or **null**
-    
-### Challenge 2 (Intermediate)
-Print **"out of range"** and/or **"not an integer"** error messages
-
-### Challenge 3 (Advanced)
-Allow for custom number ranges with outputs
-   
-   > Break into teams of three: One person is tester, one person is ops (manages Jenkins job execution), one person is developer. All individuals must stay in their own realm! The purpose is to simulate how one navigates a siloed work environment and bridge communication gagps
