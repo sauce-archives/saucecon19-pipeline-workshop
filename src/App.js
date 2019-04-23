@@ -55,7 +55,7 @@ class Calculator extends React.Component {
 
     const input = this.state.valueIn;
     const output = calc.getValue(input)
-
+    this.testAlert = this.testAlert.bind(this);
     return (
       <div>
         <FizzBuzzInput value={input}
