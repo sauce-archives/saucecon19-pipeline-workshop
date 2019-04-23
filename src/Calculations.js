@@ -9,6 +9,8 @@ class FizzBuzzCalculations {
                 return input % 5 === 0 ? 'Buzz' : '';
         // else
         //     return 'out of range'
+
+        // TODO: Add out of rangeg
     }
 }
 
