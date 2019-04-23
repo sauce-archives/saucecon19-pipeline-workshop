@@ -6,7 +6,7 @@ describe("Basic App Functionality", () => {
         browser.url('/index.html');
 
         const input = $('.fizzbuzzinput')
-        input.value = '15'
+        input.value = '42'
 
         const messageText = $('.fizzBuzzMessage').getText();
         const expectedText = "FizzBuzz"
