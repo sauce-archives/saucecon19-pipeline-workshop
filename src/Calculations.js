@@ -1,6 +1,6 @@
 class FizzBuzzCalculations {
 
-  getValue(int_value){
+  getValue(input){
     let result = "";
     if (input % 15 === 0){
       result = "FizzBuzz";
