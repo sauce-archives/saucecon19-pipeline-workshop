@@ -7,7 +7,7 @@ import FizzBuzzCalculations from './Calculations';
 class FizzBuzzInput extends React.Component {
   constructor(props) {
     super(props);
-    var nothing=0;
+    var nothing=6;
     this.handleChange = this.handleChange.bind(this);
   }
 
