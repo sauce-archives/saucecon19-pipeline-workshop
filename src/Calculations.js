@@ -12,7 +12,7 @@ class FizzBuzzCalculations {
       else if (input < 101 && input > 0){
         result = input
       } else {
-        result = "out of range"
+        result = "input is out of range"
       }
     return result;
   }
