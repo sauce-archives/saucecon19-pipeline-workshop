@@ -2,7 +2,7 @@ class FizzBuzzCalculations {
     getValue(input){
         let result = "";
 
-        if (input > 101 || < 1){
+        if (input > 101 || input < 1){
             result = "out of range";
         }
         else if (input % 15 === 0){
@@ -22,4 +22,4 @@ class FizzBuzzCalculations {
    }
 }
 
-export default FizzBuzzCalculations
+export default FizzBuzzCalculations;
