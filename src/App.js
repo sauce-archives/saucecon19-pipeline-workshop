@@ -47,7 +47,7 @@ class Calculator extends React.Component {
   }
 
   testAlert() {
-    this.toString("this is a sample test alert message for PRs - another test");
+    this.toString("this is a test alert message for PRs - another test");
   }
 
   handleFizzBuzzChange(value) {
