@@ -8,6 +8,7 @@ class FizzBuzzInput extends React.Component {
   constructor(props) {
     super(props);
     var nothing=8;
+    var nothing=8;
     this.handleChange = this.handleChange.bind(this);
   }
 
