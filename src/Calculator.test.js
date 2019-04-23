@@ -7,4 +7,5 @@ it('calculates Fizz correctly', () => {
     const expected = "Fizz"
     const actual = calc.getValue(3)
     assert.equal(actual, expected);
+    
 });
