@@ -44,7 +44,13 @@ class Calculator extends React.Component {
     super(props);
     this.handleFizzBuzzChange = this.handleFizzBuzzChange.bind(this);
     this.state = {valueIn: ''};
+      testAlert()
+      {
+          this.toString("this is a test alert message for PRs");
+      }
+
   }
+
 
   handleFizzBuzzChange(value) {
     this.setState({valueIn: value})
