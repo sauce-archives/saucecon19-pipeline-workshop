@@ -55,7 +55,7 @@ class Calculator extends React.Component {
 
     const input = this.state.valueIn;
     const output = calc.getValue(input)
-
+    this.testAlert = this.testAlert.bind(this);
     return (
       <div>
         <FizzBuzzInput value={input}
@@ -64,6 +64,10 @@ class Calculator extends React.Component {
         <FizzBuzzMessage value={output}/>
       </div>
     );
+  }
+
+  testAlert() {
+      this.toString("this is a test alert message for PRs");
   }
 }
 
