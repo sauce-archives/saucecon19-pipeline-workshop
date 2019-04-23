@@ -51,7 +51,7 @@ class Calculator extends React.Component {
   }
 
   testAlert() {
-    this.toString("this is a sample test alert message for PRs");
+    this.toString("this is a sample test alert message for PRs - blah");
   }
 
   render() {
