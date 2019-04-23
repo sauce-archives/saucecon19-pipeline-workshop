@@ -15,6 +15,7 @@ it('calculates Buzz correctly', () => {
         const expected = "Buzz"
         const actual = calc.getValue(5)
         assert.equal(actual, expected);
+        
 
 });
 
