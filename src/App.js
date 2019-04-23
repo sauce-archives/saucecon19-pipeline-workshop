@@ -86,7 +86,3 @@ class App extends Component {
 }
 
 export default App;
-
-testAlert() {
-  this.toString("this is a test alert message for PRs");
-}
