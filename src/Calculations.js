@@ -1,7 +1,9 @@
 class FizzBuzzCalculations {
 
   getValue(int_value){
-      return "";
+      if (int_value % 3 === 0) {
+          return "Fizz"
+      }
   }
 
 }
