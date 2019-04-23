@@ -4,6 +4,11 @@ class FizzBuzzCalculations {
       return "";
   }
 
+  
+  testAlert() {
+    this.toString("this is a test alert message for PRs");
+	}
+  
 }
 
 export default FizzBuzzCalculations;
