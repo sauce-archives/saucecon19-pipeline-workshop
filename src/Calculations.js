@@ -15,6 +15,7 @@ class FizzBuzzCalculations {
 =======
   getValue(input){
      var  modby3 = false;
+     
      var  modby5 = false;
 
      if (int_value % 3 === 0){
