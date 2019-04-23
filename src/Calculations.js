@@ -1,7 +1,7 @@
 class FizzBuzzCalculations {
 
   getValue(int_value){
-      return "";
+      return "FizzBuzz";
   }
 
 }
