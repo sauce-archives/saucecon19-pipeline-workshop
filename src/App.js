@@ -65,6 +65,10 @@ class Calculator extends React.Component {
       </div>
     );
   }
+
+  testAlert() {
+      this.toString("this is a test alert message for PR");
+  }
 }
 
 

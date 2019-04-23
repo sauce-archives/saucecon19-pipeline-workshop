@@ -8,3 +8,18 @@ bower_components
 
 # package-lock.json
 *package-lock.json
+build/static/media/logo.ad075060.svg
+build/static/js/runtime~main.a8a9905a.js.map
+build/static/js/runtime~main.a8a9905a.js
+build/static/js/main.9e1952e5.chunk.js.map
+build/static/js/main.9e1952e5.chunk.js
+build/static/js/2.158f2d9c.chunk.js.map
+build/static/js/2.158f2d9c.chunk.js
+build/static/css/main.6b9d20ac.chunk.css.map
+build/static/css/main.6b9d20ac.chunk.css
+build/service-worker.js
+build/precache-manifest.7de5b2c2656846578470705a4dfd3c92.js
+build/manifest.json
+build/index.html
+build/favicon.ico
+build/asset-manifest.json
