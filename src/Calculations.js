@@ -1,21 +1,9 @@
 class FizzBuzzCalculations {
 
-<<<<<<< Updated upstream
+
   getValue(int_value){
-      if (int_value % 5 === 0){
-	  return "Buzz"
-      }
-      else if (int_value % 3 === 0){
-	  return "Fizz"
-      }
-      else {
-	  return "FizzBuzz"
-      }
-     
-=======
-  getValue(input){
      var  modby3 = false;
-     
+
      var  modby5 = false;
 
      if (int_value % 3 === 0){
@@ -35,7 +23,6 @@ class FizzBuzzCalculations {
         return "BAD"
      }
 
->>>>>>> Stashed changes
   }
 
 }
