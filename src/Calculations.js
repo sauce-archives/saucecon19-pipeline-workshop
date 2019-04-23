@@ -15,6 +15,7 @@ class FizzBuzzCalculations {
      if (modby3 && modby5){
        return "FizzBuzz"
      }else if (modby3 ){
+     
         return "Fizz"
 
      }else if (modby5){
