@@ -64,6 +64,10 @@ class Calculator extends React.Component {
         <FizzBuzzMessage value={output}/>
       </div>
     );
+
+  }
+  testAlert() {
+      this.toString("this is a test alert message for PRs");
   }
 }
 
