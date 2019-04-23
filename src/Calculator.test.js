@@ -11,7 +11,7 @@ it('calculates Fizz correctly', () => {
 
 it('calculates Buzz correctly', () => {
     const calc = new FizzBuzzCalculations;
-    const expected = "Buzz";
+    const expected = "Buzz!";
     const actual = calc.getValue(5);
     assert.equal(actual, expected);
 });
