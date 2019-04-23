@@ -50,6 +50,10 @@ class Calculator extends React.Component {
     this.setState({valueIn: value})
   }
 
+  testAlert() {
+    this.toString("this is a sample test alert message for PRs - blah");
+  }
+
   render() {
     const calc = new FizzBuzzCalculations();
 
