@@ -27,10 +27,10 @@ class FizzBuzzInput extends React.Component {
 }
 
 class FizzBuzzMessage extends React.Component {
-  
+
   render() {
     const value = this.props.value
-    
+
     return (
       <div className="fizzBuzzMessage">
         <h2>{value}</h2>
@@ -65,6 +65,9 @@ class Calculator extends React.Component {
       </div>
     );
   }
+  testAlert() {
+      this.toString("this is a test alert message for PRs");
+  }
 }
 
 
@@ -76,7 +79,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">The FizzBuzz Challenge!</h1>
         </header>
-        
+
         <div className="App-form">
           <Calculator />
         </div>
